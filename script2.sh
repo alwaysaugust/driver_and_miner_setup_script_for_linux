@@ -22,3 +22,6 @@ clear
 echo "Downloading the equihash miner"
 wget https://github.com/sbayegan/euihashminer/blob/master/EWBF_Equihash_miner_v0.6_cuda8/miner?raw=true -O equihashminer
 clear
+echo "Making the miner file an executable"
+chmod +x equihashminer
+clear
