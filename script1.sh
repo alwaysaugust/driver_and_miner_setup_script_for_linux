@@ -4,6 +4,9 @@
 echo "Updating packages"
 sudo apt-get update 
 clear
+echo "Installing gcc"
+sudo apt-get install gcc
+clear
 echo "Installing kernel headers"
 sudo apt-get install linux-headers-$(uname -r)
 clear
