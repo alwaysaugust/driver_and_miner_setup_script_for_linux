@@ -13,11 +13,9 @@ clear
 echo "Installing g++"
 sudo apt-get install g++
 clear
-echo "Installing kernel headers"
-sudo apt-get install linux-headers-$(uname -r)
+echo "Download CUDA drivers"
+wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda_10.0.130_410.48_linux -O cuda_10.0.130_410.48_linux.run
 clear
-echo "Installing xorg-dev"
-sudo apt-get install xorg-dev 
+echo "Installing the drivers"
+sudo sh cuda_10.0.130_410.48_linux.run
 clear
-echo "Rebooting"
-sudo reboot now
