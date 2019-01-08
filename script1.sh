@@ -18,4 +18,3 @@ wget https://developer.nvidia.com/compute/cuda/10.0/Prod/local_installers/cuda_1
 clear
 echo "Installing the drivers"
 sudo sh cuda_10.0.130_410.48_linux.run
-clear
